@@ -1,5 +1,3 @@
-import 'dart:developer' as developer;
-
 import 'package:flutter/material.dart';
 
 class Comment {
@@ -8,10 +6,12 @@ class Comment {
   String? avatar;
   String? userName;
   String? content;
+  String? commentId;
 
   Comment({
     @required this.avatar,
     @required this.userName,
     @required this.content,
+    this.commentId,
   });
 }
